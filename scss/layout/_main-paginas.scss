@@ -1,0 +1,391 @@
+main .productos-tienda{
+    display: flex;
+    justify-content: center;
+}
+.h3-productos{
+    display: flex;
+    text-align: start;
+    padding: 100px;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: cursive;
+    padding-top: 200px;
+    text-shadow: 2px 2px 5px #333;
+}
+
+.grid-productos{
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 12.5rem;
+    text-align: center;
+    padding-left: 300px;
+    p{
+        font-size: 30px;
+        text-shadow: 1px 1px 4px #333;
+    }
+}
+.grid-productos2{
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12.5rem;
+    text-align: center;
+    padding-left: 300px;
+    p{
+        font-size: 30px;
+        text-shadow: 1px 1px 4px #333;
+    }
+}
+.grid-productos3{
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12.5rem;
+    text-align: center;
+    padding-left: 300px;
+    p{
+        font-size: 30px;
+        text-shadow: 1px 1px 4px #333;
+    }
+}
+.grid-productos4{
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 12.5rem;
+    text-align: center;
+    padding-left: 300px;
+    padding-bottom: 200px;
+    p{
+        font-size: 30px;
+        text-shadow: 1px 1px 4px #333;
+    }
+} 
+.productos-tienda img{
+    width: 300px;
+    height: 300px;
+    border-color: gray;
+    border-style:solid;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.productos-tienda span{
+    text-decoration: underline;
+    color: rgb(248, 144, 59);
+    font-size: 25px;
+    text-shadow: 1px 1px 4px #333;
+}
+section button{
+    font-size: 20px;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 50px;
+    text-align: center;
+    font-family: cursive;
+    background-color: #cac2ac;
+}
+.productos-tienda-final{
+    display: flex;
+    justify-content: center;
+    h2{
+        font-family: cursive;
+        font-size: 30px;
+        text-shadow: 2px 2px 5px #333;
+        text-decoration: underline;
+    }
+    
+} 
+div .boton-wsp{
+    display: flex;
+    justify-content:center ;
+    .boton-tienda{
+        padding: 10px 20px;
+        background: #65946F;
+        color: #fff;
+        border-color: black;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: cursive;
+        font-size: 20px;
+        text-shadow: 2px 2px 5px #333;
+    }
+}
+.boton-wsp{
+    margin: 20px 20px 100px 20px;
+    text-align: center;
+} 
+
+/*Pagina de CONSEJOS*/
+
+.pag-coonsejos{
+    width: 100%;
+    display: flex;
+    justify-content: center;}
+    h1{
+        padding: 50px 50px 50px 50px;
+        margin-top: 100px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        text-shadow: 2px 2px 5px #333;
+        text-decoration: underline;
+        border: #333 solid 5px;
+        background-color: #82ca9188;
+        border-radius: 70px;
+    }
+
+    .container-consejos {
+        position: relative;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            padding: 100px 0 50px 0;
+        }
+        .texto-encima {
+            padding-right: 50px ;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50% -50%);
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #333;
+        }
+        .texto-encima2 {
+            padding-left: 50px;
+            position:absolute;
+            right: 50%;
+            bottom: 35%;
+            transform: translate(-50% -50%);
+            color: #fff;
+            font-family: cursive;
+            font-size: 35px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #333;
+        }
+    
+    }
+    .texto-consejos-final{
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        text-align: center;
+        padding: 80px;
+        h2{
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            border:#000000 solid 5px;
+            background-color: #82ca9188;
+            padding: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 30px;
+        }
+        h4{
+            padding: 50px;
+            font-size: 40px;
+            text-align: center;
+            text-decoration: underline;
+        }
+    }
+
+    /*pagina NOSOTROS*/
+
+    .nosotros-titulo{
+    width: 100%;
+    font-family: cursive;
+    font-size: 60px;
+    padding: 20px 20px 20px 10px;
+    background-color: #82ca9188;
+    border: #333 solid 6px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px #333;
+    text-align: center;
+}
+.nosotros {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 100px;
+    h2{
+        padding: 40px 60px 100px 60px;
+        font-family: cursive;
+        font-size: 60px;
+        text-align: center;
+        text-decoration: underline;
+        line-height: 100px;
+        text-shadow: 2px 2px 4px #333;
+    }
+    h3{
+        padding: 40px 60px 100px 60px;
+        font-family: cursive;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: underline;
+        line-height: 100px;
+    }
+    
+}
+
+/*Pagina CONTACTOS*/
+
+.contactos-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+    "p1 p1"
+    "c2 r1"
+    ;
+}
+.pag-contactos{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    grid-area: p1;
+    padding-top: 100px;
+    text-shadow: 2px 2px 4px #333;
+}
+.correo {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 100px 300px;
+    font-size: 30px;
+    grid-area: c2;
+    h4{
+        font-size: 40px;
+        text-decoration: underline;
+        text-shadow: 2px 2px 4px #333;
+    }
+    .img-correo{
+        padding: 20px;
+        display: flex;
+    }
+    img{
+        width: 32px;
+    }
+}
+
+.redes-grid{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 100px 300px;
+    font-size: 30px;
+    grid-area: r1;
+    h4{
+        font-size: 40px;
+        padding-bottom: 20px;
+        text-decoration: underline;
+        text-shadow: 2px 2px 4px #333;
+    }
+    img{
+        height: 32px;
+        padding-left: 40px;
+    }
+}
+
+.formulario{
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    border: #333 solid 5px;
+    background-color: #82ca9275;
+    h3{
+        font-family: cursive;
+        font-size: 40px;
+        text-decoration: underline;
+        text-shadow: 2px 2px 4px #333;
+        padding: 30px;
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        padding: 30px;
+    }
+    form{
+        width: 100%;
+        margin: 0;
+        padding: 50px;
+        input{
+            font-size: 30px;
+            border: #333 solid 4px;
+            border-radius: 10px;
+            width: 600px;
+        }
+    } 
+    .button{
+        margin: 10px;
+        font-family: cursive;
+        width: 200px;
+        background-color: #4d4d4dc5;
+        color: #fff;
+    }
+    
+    
+}
+.ubicacion-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+    "p1 p1"
+    "c2 r1"
+    ;
+}
+.pag-ubicacion{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    grid-area: p1;
+    padding-top: 100px;
+    text-shadow: 2px 2px 4px #333;
+}
+.img-ubicacion {
+    padding: 20px;
+    display: flex;
+}
+section .ubicacion-1{
+    padding: 50px 0 100px 200px;
+    p{
+        font-size: 28px;
+        text-align: center;
+    }
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+section .ubicacion-c{
+    padding: 50px 0 100px 400px;
+    p{
+        font-size: 28px;
+        text-align: center;
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+    
+}
+
+
+    
+
+
+
+
+
+
+
+
+

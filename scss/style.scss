@@ -1,0 +1,21 @@
+@import "./utilities/variables";
+
+/*base*/
+@import "./base/reset";
+
+/*Layaout*/
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-paginas";
+@import "./layout/footer";
+
+/*media Q*/
+@import "./layout/media/media768";
+@import "./layout/media/media320";
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(../assets/img/img-inicio/c0e88a72-9087-4822-9141-facbef991bc4\ 3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+// Estilos del header
+header {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: $header-padding;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .logo img {
+        height: 200px;
+    }
+}
+
+// Estilos de navegación
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        font-size: 20px;
+        padding-right: 200px;
+        text-shadow: 1px 1px 3px $primary-text-color;
+
+        li a {
+            text-decoration: none;
+            color: $primary-text-color;
+            border-radius: 10px;
+            border: solid 1px;
+            background-color: rgba(128, 128, 128, 0.596);
+            padding: 10px;
+        }
+    }
+}
+
+// Secciones y elementos específicos
+.promo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 250px;
+    background-image: url("../assets/img/img-inicio/Img-promos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: #0000002f solid 2px;
+
+    h2 {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    p {
+        margin: 10px 0;
+        font-size: 25px;
+    }
+}

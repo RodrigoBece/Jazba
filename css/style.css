@@ -1,1023 +1,793 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-html body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
+
+/*Layaout*/
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  font-family: Arial, sans-serif;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-image: url(../assets/img/img-inicio/c0e88a72-9087-4822-9141-facbef991bc4\ 3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
+  background-image: url(../assets/img/img-inicio/c0e88a72-9087-4822-9141-facbef991bc4\ 3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 header .logo img {
-    height: 200px;
+  height: 200px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    font-size: x-large;
-    padding-right: 200px;
-    font-size: 20px;
-    text-shadow: 1px 1px 3px #333;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  padding-right: 200px;
+  text-shadow: 1px 1px 3px #333;
 }
-
 nav ul li a {
-    text-decoration: none;
-    color: #333;
-    border-radius: 10px;
-    border: solid 1px;
-    background-color: rgba(128, 128, 128, 0.596);
-    padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+  border: solid 1px;
+  background-color: rgba(128, 128, 128, 0.596);
+  padding: 10px;
 }
 
 .promo {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 250px;
-    background-image: url("../assets/img/img-inicio/Img-promos.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: #0000002f solid 2px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 250px;
+  background-image: url("../assets/img/img-inicio/Img-promos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: rgba(0, 0, 0, 0.1843137255) solid 2px;
 }
-
 .promo h2 {
-    margin: 0;
-    font-size: 40px;
+  margin: 0;
+  font-size: 40px;
 }
-
 .promo p {
-    margin: 10px 0;
-    font-size: 25px;
+  margin: 10px 0;
+  font-size: 25px;
 }
 
-main .productos {
-    width: 100%;
-    height:max-content;
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    text-align: center;
+.productos {
+  width: 100%;
+  height: max-content;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
 }
-
-section .productos{
-    display: flex;
-    justify-content: space-around;
-}
-.productos-flex{
-    justify-content: space-around;
-}
-
-
-.productos h3{
-    font-family: "Montserrat", sans-serif;
-    font-size: x-large;
-    text-decoration: underline;
+.productos h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+  text-decoration: underline;
 }
 .productos h2 {
-    margin: 50px;
-    font-size: xx-large;
-    padding: 10px;
-    text-shadow: 2px 2px 5px #333;
+  margin: 50px;
+  font-size: xx-large;
+  padding: 10px;
+  text-shadow: 2px 2px 5px #333;
 }
-
-.productos-categoria {
-    margin-bottom: 20px;
-}
-
-.productos-categoria h3 {
-    margin-bottom: 10px;
-}
-
-
 .productos img {
-    width: 300px;
-    height: 300px;
-    border-color: gray;
-    border-style:solid;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 50px;
+  width: 300px;
+  height: 300px;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 50px;
 }
-
 .productos p {
-    margin: 10px 0 0;
+  margin: 10px 0 0;
 }
 
-
-
-.boton-vermas {
-    padding: 20px 40px;
-    background: #65946F;
-    color: #fff;
-    border-color: black;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: cursive;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px #333;
+.boton-vermas,
+.boton-tienda {
+  padding: 20px 40px;
+  background: #65946F;
+  color: #fff;
+  border-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px #333;
 }
 
-
-
-main .consejos{
-    width: 100%;
-    height: auto;
+.consejos {
+  width: 100%;
+  height: auto;
 }
-
-
-
-
 .consejos h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: xx-large;
-    margin: 100px;
-    padding-top: 50px;
-    text-align: center;
-    text-decoration:underline;
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  margin: 100px;
+  padding-top: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+.consejos .img-consejos1 {
+  display: flex;
+  justify-content: start;
+  height: 400px;
+  width: 750px;
+  float: left;
+}
+.consejos .consejos-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.consejos .consejos-1 p {
+  margin: 0;
+  padding: 100px 0 70px 100px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+.consejos .consejos2 {
+  gap: 20px;
+}
+.consejos .consejos2 p {
+  margin: 0;
+  padding: 100px 0 70px 100px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+.consejos .consejos2 h3 {
+  font-size: 30px;
+  padding: 200px 50px 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+.consejos .img-consejos2 {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 750px;
 }
 
-section .img-consejos1{
-    display: flex;
-    justify-content: start;
-    height: 400px;
-    width: 750px;
-    float: left;
+main .productos-tienda {
+  display: flex;
+  justify-content: center;
 }
 
-.consejos-1 p{
-    margin: 0;
-    padding: 100px 0 70px 100px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    text-align: center;
+.h3-productos {
+  display: flex;
+  text-align: start;
+  padding: 100px;
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: cursive;
+  padding-top: 200px;
+  text-shadow: 2px 2px 5px #333;
 }
 
-
-.consejos-1{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.grid-productos {
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 12.5rem;
+  text-align: center;
+  padding-left: 300px;
+}
+.grid-productos p {
+  font-size: 30px;
+  text-shadow: 1px 1px 4px #333;
 }
 
-.consejos2{
-    display: flex;
-    width: 100%;
-    margin-bottom: 50px;
-
+.grid-productos2 {
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12.5rem;
+  text-align: center;
+  padding-left: 300px;
 }
-.consejos-2{
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    text-align: start;
-    padding: 70px 0 0 50px;
-}
-
-
-
-.footer {
-    width: 100%;
-    padding: 40px 0;
-    height: auto;
-    background: #65946F;
-    background-size: contain;
-    color: #000000;
+.grid-productos2 p {
+  font-size: 30px;
+  text-shadow: 1px 1px 4px #333;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px; /* Esto controla el ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenedor */
-    width: 100%;
-    padding: 0 20px; /* Añade algo de padding en los lados para el contenido */
+.grid-productos3 {
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12.5rem;
+  text-align: center;
+  padding-left: 300px;
+}
+.grid-productos3 p {
+  font-size: 30px;
+  text-shadow: 1px 1px 4px #333;
 }
 
-.contacts, .location{
-    flex: 1;
-    text-align: center;
-    padding: 100px
+.grid-productos4 {
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 12.5rem;
+  text-align: center;
+  padding-left: 300px;
+  padding-bottom: 200px;
 }
-.social h3{
-    font-size: 30px;
-    text-decoration: underline;
-    flex: 1;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-.contacts h3{
-    text-decoration: underline;
-    font-size: 30px;
-}
-.contacts p{
-    font-size: 25px;
-    text-align: center;
+.grid-productos4 p {
+  font-size: 30px;
+  text-shadow: 1px 1px 4px #333;
 }
 
-.location h3{
-    text-decoration: underline;
-    font-size: 30px;
-}
-.location p{
-    font-size: 18px;
-    text-align: center;
-}
-
-
-
-
-
-
-/* PAGINA 2 DE PRODUCTOS
-(se uso grid*/
-
-
-
-.h3-productos{
-    display: flex;
-    text-align: start;
-    padding: 100px;
-    text-decoration: underline;
-    font-size: 30px;
-    font-family: cursive;
-    padding-top: 200px;
-    text-shadow: 2px 2px 5px #333;
+.productos-tienda img {
+  width: 300px;
+  height: 300px;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-
-.grid-productos{
-    display: grid;
-    width: auto;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 12.5rem;
-    text-align: center;
-    padding-left: 300px;
+.productos-tienda span {
+  text-decoration: underline;
+  color: rgb(248, 144, 59);
+  font-size: 25px;
+  text-shadow: 1px 1px 4px #333;
 }
 
-.grid-productos p{
-    font-size: 30px;
-    text-shadow: 1px 1px 4px #333;
+section button {
+  font-size: 20px;
+  margin: 10px;
+  padding: 7px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: cursive;
+  background-color: #cac2ac;
 }
 
-
-.grid-productos2{
-    display: grid;
-    width: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 12.5rem;
-    text-align: center;
-    padding-left: 300px;
+.productos-tienda-final {
+  display: flex;
+  justify-content: center;
+}
+.productos-tienda-final h2 {
+  font-family: cursive;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px #333;
+  text-decoration: underline;
 }
 
-.grid-productos2 p{
-    font-size: 30px;
-    text-shadow: 1px 1px 4px #333;
+div .boton-wsp {
+  display: flex;
+  justify-content: center;
+}
+div .boton-wsp .boton-tienda {
+  padding: 10px 20px;
+  background: #65946F;
+  color: #fff;
+  border-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px #333;
 }
 
-
-.grid-productos3{
-    display: grid;
-    width: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 12.5rem;
-    text-align: center;
-    padding-left: 300px;
+.boton-wsp {
+  margin: 20px 20px 100px 20px;
+  text-align: center;
 }
 
-.grid-productos3 p{
-    font-size: 30px;
-    text-shadow: 1px 1px 4px #333;
+/*Pagina de CONSEJOS*/
+.pag-coonsejos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-
-.grid-productos4{
-    display: grid;
-    width: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
-    gap: 12.5rem;
-    text-align: center;
-    padding-left: 300px;
-    padding-bottom: 200px;
-} 
-
-.grid-productos4 p{
-    font-size: 30px;
-    text-shadow: 1px 1px 4px #333;
-}
-
-
-
-.productos-tienda span{
-    text-decoration: underline;
-    color: rgb(248, 144, 59);
-    font-size: 25px;
-    text-shadow: 1px 1px 4px #333;
-}
-
-
-main .productos-tienda{
-    display: flex;
-    justify-content: center;
-}
-
-section .produtos-tienda{
-    display: flex;
-    justify-content: center;
-}
-.boton-tienda{
-    padding: 10px 20px;
-    background: #65946F;
-    color: #fff;
-    border-color: black;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: cursive;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px #333;
-}
-div .boton-wsp{
-    display: flex;
-    justify-content:center ;
-}
-
-.productos-tienda img{
-    width: 300px;
-    height: 300px;
-    border-color: gray;
-    border-style:solid;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.productos-tienda-final{
-    display: flex;
-    justify-content: center;
-} 
-
-.productos-tienda-final h2{
-    font-family: cursive;
-    font-size: 30px;
-    text-shadow: 2px 2px 5px #333;
-    text-decoration: underline;
-}
-
-.boton-wsp{
-    margin: 20px 20px 100px 20px;
-    text-align: center;
-} 
-
-section button{
-    font-size: 20px;
-    margin: 10px;
-    padding: 7px;
-    border-radius: 50px;
-    text-align: center;
-    font-family: cursive;
-    background-color: #cac2ac;
-}
-
-
-
-
-/*PAGINA 3 (CONSEJOS)*/
-
-main .pag-coonsejos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.pag-consejos h1{
-    padding: 50px 50px 50px 50px;
-    margin-top: 100px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 40px;
-    text-shadow: 2px 2px 5px #333;
-    text-decoration: underline;
-    border: #333 solid 5px;
-    background-color: #82ca9188;
-    border-radius: 70px;
+h1 {
+  padding: 50px 50px 50px 50px;
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px #333;
+  text-decoration: underline;
+  border: #333 solid 5px;
+  background-color: rgba(130, 202, 145, 0.5333333333);
+  border-radius: 70px;
 }
 
 .container-consejos {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
-
 .container-consejos img {
-    width: 100%;
-    height: auto;
-    padding: 100px 0 50px 0;
+  width: 100%;
+  height: auto;
+  padding: 100px 0 50px 0;
+}
+.container-consejos .texto-encima {
+  padding-right: 50px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #333;
+}
+.container-consejos .texto-encima2 {
+  padding-left: 50px;
+  position: absolute;
+  right: 50%;
+  bottom: 35%;
+  transform: translate(-50% -50%);
+  color: #fff;
+  font-family: cursive;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #333;
 }
 
-.texto-encima {
-    padding-right: 50px ;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50% -50%);
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px #333;
+.texto-consejos-final {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 80px;
+}
+.texto-consejos-final h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  border: #000000 solid 5px;
+  background-color: rgba(130, 202, 145, 0.5333333333);
+  padding: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 30px;
+}
+.texto-consejos-final h4 {
+  padding: 50px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.texto-encima2 {
-    padding-left: 50px;
-    position:absolute;
-    right: 50%;
-    bottom: 35%;
-    transform: translate(-50% -50%);
-    color: #fff;
-    font-family: cursive;
-    font-size: 35px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px #333;
+/*pagina NOSOTROS*/
+.nosotros-titulo {
+  width: 100%;
+  font-family: cursive;
+  font-size: 60px;
+  padding: 20px 20px 20px 10px;
+  background-color: rgba(130, 202, 145, 0.5333333333);
+  border: #333 solid 6px;
+  border-radius: 20px;
+  text-shadow: 2px 2px 4px #333;
+  text-align: center;
 }
-
-.texto-consejos-final{
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 80px;
-}
-
-.texto-consejos-final h2{
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    border:#000000 solid 5px;
-    background-color: #82ca9188;
-    padding: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 30px;
-}
-
-.texto-consejos-final h4{
-    padding: 50px;
-    font-size: 40px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-
-
-/*PAGINA 4 (NOSOTROS)*/
 
 .nosotros {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 100px;
+}
+.nosotros h2 {
+  padding: 40px 60px 100px 60px;
+  font-family: cursive;
+  font-size: 60px;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 100px;
+  text-shadow: 2px 2px 4px #333;
+}
+.nosotros h3 {
+  padding: 40px 60px 100px 60px;
+  font-family: cursive;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 100px;
 }
 
-
-.nosotros-titulo{
-    margin: 100px 100px 0px 650px;
-    width: 600px;
-    font-family: cursive;
-    font-size: 60px;
-    padding: 20px 20px 20px 10px;
-    background-color: #82ca9188;
-    border: #333 solid 6px;
-    border-radius: 20px;
-    text-shadow: 2px 2px 4px #333;
-    text-align: center;
+/*Pagina CONTACTOS*/
+.contactos-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "p1 p1" "c2 r1";
 }
 
-.nosotros h2{
-    padding: 40px 60px 100px 60px;
-    font-family: cursive;
-    font-size: 60px;
-    text-align: center;
-    text-decoration: underline;
-    line-height: 100px;
-    text-shadow: 2px 2px 4px #333;
-}
-
-.nosotros h3{
-    padding: 40px 60px 100px 60px;
-    font-family: cursive;
-    font-size: 40px;
-    text-align: center;
-    text-decoration: underline;
-    line-height: 100px;
-}
-
-
-/* PAGINA 5 (CONTACTOS) */
-
-.contactos-grid{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-
-    grid-template-areas:
-    "p1 p1"
-    "c2 r1"
-    ;
-}
-
-
-
-.pag-contactos{
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    text-align: center;
-    grid-area: p1;
-    padding-top: 100px;
-    text-shadow: 2px 2px 4px #333;
+.pag-contactos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  grid-area: p1;
+  padding-top: 100px;
+  text-shadow: 2px 2px 4px #333;
 }
 
 .correo {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 100px 100px 300px;
-    font-size: 30px;
-    grid-area: c2;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 100px 100px 300px;
+  font-size: 30px;
+  grid-area: c2;
 }
-.img-correo{
-    padding: 20px;
-    display: flex;
+.correo h4 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px #333;
 }
-
-.redes-grid{
-    display: flex;
-    flex-direction: column;
-    padding: 100px 100px 100px 300px;
-    font-size: 30px;
-    grid-area: r1;
+.correo .img-correo {
+  padding: 20px;
+  display: flex;
 }
-
-.redes-grid h4{
-    font-size: 40px;
-    padding-bottom: 20px;
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px #333;
-}
-.redes-grid img{
-    height: 32px;
-    padding-left: 40px;
+.correo img {
+  width: 32px;
 }
 
-.correo h4{
-    font-size: 40px;
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px #333;
+.redes-grid {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 100px 100px 300px;
+  font-size: 30px;
+  grid-area: r1;
+}
+.redes-grid h4 {
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px #333;
+}
+.redes-grid img {
+  height: 32px;
+  padding-left: 40px;
 }
 
-.correo img{
-    width: 32px;
+.formulario {
+  height: auto;
+  text-align: center;
+  font-size: 40px;
+  border: #333 solid 5px;
+  background-color: rgba(130, 202, 146, 0.4588235294);
+}
+.formulario h3 {
+  font-family: cursive;
+  font-size: 40px;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px #333;
+  padding: 30px;
+}
+.formulario p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  padding: 30px;
+}
+.formulario form {
+  width: 100%;
+  margin: 0;
+  padding: 50px;
+}
+.formulario form input {
+  font-size: 30px;
+  border: #333 solid 4px;
+  border-radius: 10px;
+  width: 600px;
+}
+.formulario .button {
+  margin: 10px;
+  font-family: cursive;
+  width: 200px;
+  background-color: rgba(77, 77, 77, 0.7725490196);
+  color: #fff;
 }
 
-
-.formulario{
-    height: 1000px;
-    text-align: center;
-    font-size: 40px;
-    border: #333 solid 5px;
-    background-color: #82ca9275;
+.ubicacion-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "p1 p1" "c2 r1";
 }
 
-.contenido-form h3{
-    font-family: cursive;
-    font-size: 40px;
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px #333;
-    padding: 30px;
+.pag-ubicacion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  grid-area: p1;
+  padding-top: 100px;
+  text-shadow: 2px 2px 4px #333;
 }
-
-.contenido-form p{
-    font-family: "Montserrat", sans-serif;
-    font-size: 40px;
-    padding: 30px;
-}
-
-.form-agrandado{
-    width: 100%;
-    margin: 0;
-    padding: 50px;
-} 
-
-.form-agrandado input{
-    font-size: 30px;
-    border: #333 solid 4px;
-    border-radius: 10px;
-    width: 600px;
-}
-
-div .button{
-    margin: 10px;
-    font-family: cursive;
-    width: 200px;
-    background-color: #4d4d4dc5;
-    color: #fff;
-}
-
-
-.ubicacion-grid{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    grid-template-areas:
-    "p1 p1"
-    "c2 r1"
-    ;
-}
-
-
-.pag-ubicacion{
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    text-align: center;
-    grid-area: p1;
-    padding-top: 100px;
-    text-shadow: 2px 2px 4px #333;
-}
-
-.ubicaciones {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 100px 100px 300px;
-    font-size: 30px;
-    grid-area: c2;
-}
-section .ubicacion-1{
-    padding: 50px 0 100px 200px;
-}
-.ubicacion-1{
-    padding: 50px 200px 50px 50px;
-}
-.ubicacion-1 p{
-    font-size: 28px;
-    text-align: center;
-}
-.ubicacion-1 img{
-    width: 40px;
-    height: 40px;
-}
-
-section .ubicacion-c{
-    padding: 50px 0 100px 400px;
-}
-
-.ubicacion-c{
-    padding: 50px 200px 50px 50px;
-}
-.ubicacion-c p{
-    font-size: 28px;
-    text-align: center;
-}
-.ubicacion-c img{
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-}
-
 
 .img-ubicacion {
-    padding: 20px;
-    display: flex;
+  padding: 20px;
+  display: flex;
 }
 
-
-/* Media Queries */ 
-
-
-@media (max-width: 1024px) {
-    header .logo img {
-        height: 150px;
-    }
-    nav ul {
-        gap: 20px;
-        padding-right: 100px;
-    }
-    .promo {
-        padding: 150px;
-    }
-    .productos img {
-        width: 250px;
-        height: 250px;
-        margin: 30px;
-    }
-    .consejos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .consejos2{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-
+section .ubicacion-1 {
+  padding: 50px 0 100px 200px;
+}
+section .ubicacion-1 p {
+  font-size: 28px;
+  text-align: center;
+}
+section .ubicacion-1 img {
+  width: 40px;
+  height: 40px;
 }
 
+section .ubicacion-c {
+  padding: 50px 0 100px 400px;
+}
+section .ubicacion-c p {
+  font-size: 28px;
+  text-align: center;
+}
+section .ubicacion-c img {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.footer {
+  width: 100%;
+  padding: 40px 0;
+  height: auto;
+  background: #65946F;
+  background-size: contain;
+  color: #000000;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+.footer .container .contacts, .footer .container .location, .footer .container .social {
+  flex: 1;
+  text-align: center;
+  padding: 100px;
+}
+.footer .container .contacts h3, .footer .container .location h3, .footer .container .social h3 {
+  text-decoration: underline;
+  font-size: 30px;
+}
+.footer .container .contacts p, .footer .container .location p, .footer .container .social p {
+  font-size: 25px;
+  text-align: center;
+}
+
+/*media Q*/
 @media (max-width: 768px) {
-    header {
-        display: flex;
-        align-items: center;
-        padding: 20px;
-    }
-    nav ul {
-        padding-right: 0;
-        gap: 10px;
-    }
-    .promo {
-        padding: 100px;
-    }
-    .productos {
-        flex-direction: column;
-        align-items: center;
-    }
-    .productos img {
-        width: 200px;
-        height: 200px;
-    }
-    .consejos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .consejos img{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .consejos p{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .grid-productos{
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr ;
-        }
-        .grid-productos2{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-        }
-        
-        .grid-productos3{
-            grid-template-columns: 1fr 1fr ;
-            grid-template-rows: 1fr ;
-        }
-        
-        .grid-productos4{
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr ;
-        } 
-
-        /*pagina CONSEJOS*/
-        .encabezado{
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        .texto-encima{
-            font-size: 15px;
-        }
-        .texto-encima2{
-            font-size: 15px;
-        }
-        .container{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .container h3{
-            font-size: 20px;
-        }
-        .contacts{
-            padding: 50px;
-        }
-        .location{
-            padding: 50px;
-        }
-        .social{
-            padding: 50px;
-        }
-    }
-
-
-@media (max-width: 425px) {
-    .promo {
-        padding: 50px;
-    }
-    .productos img {
-        width: 150px;
-        height: 150px;
-        margin: 20px;
-    }
-    .consejos h2 {
-        font-size: large;
-        margin: 20px;
-    }
-    .consejos-1 p {
-        padding: 20px;
-        font-size: medium;
-    }
-    .grid-productos{
-        grid-template-columns: 1fr  ;
-        grid-template-rows: 1fr 1fr ;
-        }
-        .grid-productos2{
-            grid-template-columns: 1fr ;
-            grid-template-rows: 1fr 1fr;
-        }
-        
-        .grid-productos3{
-            grid-template-columns: 1fr  ;
-            grid-template-rows: 1fr ;
-        }
-        
-        .grid-productos4{
-            grid-template-columns: 1fr ;
-            grid-template-rows: 1fr ;
-        } 
-        .consejos-1 p{
-            font-size: 30px;
-            text-align: start;
-        }
-
-        .consejos h2{
-            font-size: 30px;
-            text-align: center;
-            align-items: center;
-        }
-        .footer {
-            width: 100%;
-            padding: 40px 0;
-            height: auto;
-            background: #65946F;
-            color: #000000;
-        }
-
-        /*pagina 3 CONSEJOS*/
-        header .logo img {
-            align-items: center;
-            height: 200px;
-        }
-        .encabezado{
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        .pag-consejos h1{
-            font-size: 20px;
-        }
-        .texto-encima{
-            font-size: 10px;
-        }
-        .texto-encima2{
-            font-size: 10px;
-        }
-
-
-        .texto-consejos-final{
-            font-size: 30px;
-        }
-        .texto-consejos-final h2{
-            text-align: start;
-            font-size: 20px;
-            line-height: 25px;
-        }
-        .texto-consejos-final h4{
-            font-size: 30px;
-        }
-
-        .container h3{
-            font-size: 20px;
-        }
-        .contacts{
-            padding: 50px;
-        }
-        .location{
-            padding: 50px;
-        }
-        .social{
-            padding: 50px;
-        }
-
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  nav ul {
+    padding-right: 0;
+    gap: 10px;
+  }
+  .promo {
+    padding: 100px;
+  }
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productos img {
+    width: 200px;
+    height: 200px;
+  }
+  .consejos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .consejos img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .consejos p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .grid-productos2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .grid-productos3 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .grid-productos4 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  /*pagina 3 CONSEJOS*/
+  .encabezado {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .texto-encima h3 {
+    font-size: 20px;
+  }
+  .texto-encima p {
+    font-size: 15px;
+  }
+  .texto-encima2 h3 {
+    font-size: 20px;
+  }
+  .texto-encima2 p {
+    font-size: 15px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container h3 {
+    font-size: 20px;
+  }
+  .contacts {
+    padding: 50px;
+  }
+  .location {
+    padding: 50px;
+  }
+  .social {
+    padding: 50px;
+  }
+  /*pagina 4 NOSOTROS*/
+  .nosotros-titulo {
+    justify-content: start;
+  }
+  /*pagina 5 CONTACTOS*/
+  .contactos-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .ubicacion-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  section .ubicacion-c {
+    padding: 50px 0 100px 400px;
+  }
 }
-
-
 @media (max-width: 320px) {
-
-    nav ul {
-        font-size: small;
-    }
-    .promo {
-        padding: 20px;
-    }
-    .productos img {
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-    }
-    .consejos-1 p {
-        font-size: small;
-        padding: 10px;
-    }
-    .boton-vermas {
-        padding: 5px 10px;
-        font-size: small;
-    }
-    footer{
-        width: 100%;
-        height: auto;
-    }
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-            /*pagina 3 CONSEJOS*/
-            header .logo img {
-                align-items: center;
-                height: 200px;
-            }
-            .encabezado{
-                height: auto;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-            }
-            .pag-consejos h1{
-                font-size: 20px;
-            }
-
-            .texto-encima{
-                font-size: 7px;
-            }
-            .texto-encima2{
-                font-size: 7px;
-            }
-    
-    
-            .texto-consejos-final{
-                font-size: 20px;
-            }
-            .texto-consejos-final h2{
-                display: none;
-            }
-            .texto-consejos-final h4{
-                font-size: 18px;
-                text-align: start;
-            }
-    
-            .container h3{
-                font-size: 20px;
-            }
-            .contacts{
-                padding: 50px;
-            }
-            .location{
-                padding: 50px;
-            }
-            .social{
-                padding: 50px;
-            }
-    
+  nav ul {
+    font-size: small;
+  }
+  .promo {
+    padding: 20px;
+  }
+  .productos img {
+    width: 100%;
+    height: auto;
+  }
+  section .img-consejos1 {
+    width: 100%;
+    height: auto;
+  }
+  .consejos-1 p {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+  }
+  .boton-vermas {
+    padding: 5px 10px;
+    font-size: small;
+  }
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  /*pagina 3 CONSEJOS*/
+  header .logo img {
+    align-items: center;
+    height: 200px;
+  }
+  .encabezado {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .pag-consejos h1 {
+    font-size: 20px;
+  }
+  .texto-encima h3 {
+    font-size: 8px;
+  }
+  .texto-encima p {
+    font-size: 6px;
+  }
+  .texto-encima2 h3 {
+    font-size: 8px;
+  }
+  .texto-encima2 p {
+    font-size: 7px;
+  }
+  .texto-consejos-final {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .texto-consejos-final h2 {
+    display: none;
+  }
+  .texto-consejos-final h4 {
+    font-size: 18px;
+    text-align: start;
+  }
+  .container h3 {
+    font-size: 15px;
+  }
+  .container p {
+    font-size: 10px;
+  }
+  .contacts {
+    padding: 50px;
+  }
+  .location {
+    padding: 50px;
+  }
+  .social {
+    padding: 50px;
+  }
+  /*pagina 4 NOSOTROS*/
+  .nosotros-titulo {
+    font-size: 40px;
+  }
+  .nosotros {
+    padding: 0;
+    font-size: 50px;
+    text-align: start;
+    line-height: none;
+  }
+  .nosotros h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+  }
+  .nosotros ul li {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

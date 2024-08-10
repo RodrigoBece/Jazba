@@ -1,0 +1,119 @@
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    nav ul {
+        padding-right: 0;
+        gap: 10px;
+    }
+    .promo {
+        padding: 100px;
+    }
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .productos img {
+        width: 200px;
+        height: 200px;
+    }
+    .consejos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .consejos img{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .consejos p{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-productos{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        }
+        .grid-productos2{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        
+        .grid-productos3{
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 1fr ;
+        }
+        
+        .grid-productos4{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr ;
+        } 
+
+        /*pagina 3 CONSEJOS*/
+        .encabezado{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .texto-encima{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .texto-encima2{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+
+        .container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container h3{
+            font-size: 20px;
+        }
+        .contacts{
+            padding: 50px;
+        }
+        .location{
+            padding: 50px;
+        }
+        .social{
+            padding: 50px;
+        }
+
+        /*pagina 4 NOSOTROS*/
+        .nosotros-titulo{
+            justify-content: start;
+        }
+
+        /*pagina 5 CONTACTOS*/
+
+        .contactos-grid{
+        display: flex;
+        flex-direction: column;
+        }
+        .ubicacion-grid{
+            display: flex;
+            flex-direction: column;
+            }
+            section .ubicacion-c {
+                padding: 50px 0 100px 400px;
+        
+        }
+        }

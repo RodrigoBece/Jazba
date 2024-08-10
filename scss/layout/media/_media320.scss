@@ -1,0 +1,112 @@
+@media (max-width: 320px) {
+
+    nav ul {
+        font-size: small;
+    }
+    .promo {
+        padding: 20px;
+    }
+    .productos img {
+        width: 100%;
+        height: auto;
+    }
+    section .img-consejos1{
+        width: 100%;
+        height: auto;
+    }
+    .consejos-1 p {
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+    }
+    .boton-vermas {
+        padding: 5px 10px;
+        font-size: small;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+            /*pagina 3 CONSEJOS*/
+            header .logo img {
+                align-items: center;
+                height: 200px;
+            }
+            .encabezado{
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .pag-consejos h1{
+                font-size: 20px;
+            }
+
+            .texto-encima{
+                h3{
+                    font-size: 8px;
+                }
+                p{
+                    font-size: 6px;
+                }
+            }
+            .texto-encima2{
+                h3{
+                    font-size: 8px;
+                }
+                p{
+                    font-size: 7px;
+                }
+            }
+    
+    
+            .texto-consejos-final{
+                font-size: 20px;
+                padding: 10px;
+            }
+            .texto-consejos-final h2{
+                display: none;
+            }
+            .texto-consejos-final h4{
+                font-size: 18px;
+                text-align: start;
+            }
+    
+            .container h3{
+                font-size: 15px;
+            }
+            .container p{
+                font-size: 10px;
+            }
+            .contacts{
+                padding: 50px;
+            }
+            .location{
+                padding: 50px;
+            }
+            .social{
+                padding: 50px;
+            }
+    
+            /*pagina 4 NOSOTROS*/
+
+            .nosotros-titulo{
+                font-size: 40px;
+            }
+            .nosotros {
+                padding: 0;
+                font-size: 50px;
+                text-align: start;
+                line-height: none;
+            }
+            .nosotros h2{
+                font-family: "Montserrat", sans-serif;
+                font-size: 40px;
+            }
+            .nosotros ul li{
+                font-family: "Montserrat", sans-serif;
+                text-decoration: underline;
+            }
+
+}
