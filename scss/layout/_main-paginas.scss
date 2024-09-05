@@ -74,6 +74,11 @@ main .productos-tienda{
     border-radius: 50%;
     object-fit: cover;
 }
+.productos-tienda img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(2px 2px 6px rgb(255, 145, 0));
+}
+
 
 
 .productos-tienda span{

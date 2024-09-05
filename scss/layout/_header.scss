@@ -11,7 +11,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-// Estilos del header
+
 header {
     height: auto;
     width: 100%;
@@ -27,7 +27,7 @@ header {
     }
 }
 
-// Estilos de navegación
+
 nav {
     ul {
         list-style: none;
@@ -47,8 +47,12 @@ nav {
         }
     }
 }
+.navbar li:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(4px 4px 8px rgba(168, 168, 168, 0.685));
 
-// Secciones y elementos específicos
+}
+
 .promo {
     width: 100%;
     height: auto;
