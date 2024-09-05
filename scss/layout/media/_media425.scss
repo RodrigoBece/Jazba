@@ -1,0 +1,268 @@
+@media (max-width: 425px) {
+    main{
+        width: 100%;
+        height: auto;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    nav ul {
+        font-size: small;
+        padding-right: 0;
+        gap: 7px;
+    }
+    .promo {
+        padding: 40px;
+    }
+    .productos {
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+        }
+    
+    }
+    .boton-vermas {
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+
+    .consejos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            font-size: large;
+            margin: 20px;
+        }
+        .img-consejos1{
+            width: 100%;
+            height: auto;
+        }
+        .img-consejos2{
+            width: 100%;
+            height: auto;
+        }
+        .consejos-1 p{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 1.25rem;
+        }
+        .consejos2 p{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 1.25rem;
+        }
+    }
+
+/*-----------------------------------------------------------*/
+
+
+.grid-productos, .grid-productos2, .grid-productos3, .grid-productos4 {
+    gap: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+.h3-productos{
+    padding: 40px;
+    font-size: 25px;
+}
+
+    
+    .grid-productos{
+        grid-template-columns: 200px 200px ;
+        grid-template-rows: 1fr 1fr ;
+        }
+        .grid-productos2{
+            grid-template-columns: 200px 200px ;
+            grid-template-rows: 1fr 1fr ;
+        }
+        
+        .grid-productos3{
+            grid-template-columns: 200px 200px ;
+            grid-template-rows: 1fr 1fr ;
+        }
+        
+        .grid-productos4{
+            grid-template-columns: 200px 200px ;
+            grid-template-rows: 1fr 1fr ;
+        } 
+
+        .productos-tienda-final h2 {
+            font-family: cursive;
+            font-size: 25px;
+            text-shadow: 2px 2px 5px #333;
+            text-decoration: underline;
+        }
+
+
+        .footer {
+            width: 100%;
+            padding: 40px 0;
+            height: auto;
+            background: #65946F;
+            color: #000000;
+        }
+
+        /*-------------------------------------------------------------*/
+
+        /*pagina 3 CONSEJOS*/
+        header .logo img {
+            align-items: center;
+            height: 200px;
+        }
+        .encabezado{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .pag-consejos h1{
+            font-size: 20px;
+        }
+
+        .texto-encima{
+            h3{
+                font-size: 10px;
+            }
+            p{
+                font-size: 8px;
+            }
+        }
+        .texto-encima2{
+            h3{
+                font-size: 10px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+
+
+        .texto-consejos-final{
+            font-size: 20px;
+            padding: 10px;
+            h2{
+                display: none;
+            }
+            h4{
+                font-size: 18px;
+                text-align: start;
+            }
+        }
+
+        .container h3{
+            font-size: 20px;
+        }
+        .contacts{
+            padding: 50px;
+        }
+        .location{
+            padding: 50px;
+        }
+        .social{
+            padding: 50px;
+        }
+
+/*----------------------------------------------------------------------*/
+
+                    .nosotros-titulo{
+                        font-size: 40px;
+                    }
+                    .nosotros {
+                        padding: 0;
+                        font-size: 25px;
+                        text-align: start;
+                        line-height: none;
+                        h2{
+                            font-family: "Montserrat", sans-serif;
+                            font-size: 40px;
+                        }
+                        h3{
+                            font-size: 30px;
+                            line-height: 50px;
+                        }
+                    }
+                    .nosotros ul li{
+                        font-family: "Montserrat", sans-serif;
+                        text-decoration: underline;
+                    }
+
+/*-----------------------------------------------------*/
+
+.pag-contactos{
+    width: 400px;
+}
+.correo{
+    padding: 50px 0;
+}
+.redes-grid{
+    padding: 50px 0;
+}
+
+.contactos-grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    .ubicacion-grid{
+        display: flex;
+        flex-direction: column;
+        }
+
+        section .ubicacion-c {
+            padding-left: 180px ;
+    
+    }
+    .pag-ubicacion h2{
+        font-size: 30px;
+    }
+.formulario {
+    width: 420px;}
+form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario .button {
+    margin: 10px;
+    font-family: cursive;
+    width: 200px;
+    background-color: rgba(77, 77, 77, 0.7725490196);
+    color: #fff;
+}
+
+.formulario form input {
+    font-size: 30px;
+    border: #333 solid 4px;
+    border-radius: 10px;
+    width: 300px; 
+}
+
+section .ubicacion-1{
+    padding: 50px;
+}
+section .ubicacion-c{
+    padding: 50px;
+}
+
+}
+
+
+

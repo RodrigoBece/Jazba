@@ -28,7 +28,76 @@
         flex-direction: column;
         text-align: center;
     }
-            /*pagina 3 CONSEJOS*/
+
+
+/*--------------------------------------------------------*/
+
+.grid-productos, .grid-productos2, .grid-productos3, .grid-productos4 {
+    gap: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+.h3-productos{
+    padding: 40px;
+    font-size: 18px;
+}
+
+    
+    .grid-productos{
+        grid-template-columns: 200px 200px ;
+        grid-template-rows: 1fr 1fr ;
+        }
+        .grid-productos2{
+            grid-template-columns: 200px 200px ;
+            grid-template-rows: 1fr 1fr ;
+        }
+        
+        .grid-productos3{
+            grid-template-columns: 200px 200px ;
+            grid-template-rows: 1fr 1fr ;
+        }
+        
+        .grid-productos4{
+            grid-template-columns: 200px 200px ;
+            grid-template-rows: 1fr 1fr ;
+        } 
+
+        .productos-tienda-final h2 {
+            font-family: cursive;
+            font-size: 20px;
+            text-shadow: 2px 2px 5px #333;
+            text-decoration: underline;
+        }
+
+        .boton-tienda{
+            padding: 20px 50px;
+            font-size: 20px;
+            height: 30px;
+        }
+
+
+        .footer {
+            width: 100%;
+            padding: 40px 0;
+            height: auto;
+            background: #65946F;
+            color: #000000;
+        }
+
+
+
+/*--------------------------------------------------------------------*/
+
+
             header .logo img {
                 align-items: center;
                 height: 200px;
@@ -64,14 +133,15 @@
             .texto-consejos-final{
                 font-size: 20px;
                 padding: 10px;
+                h2{
+                    display: none;
+                }
+                h4{
+                    font-size: 18px;
+                    text-align: start;
+                }
             }
-            .texto-consejos-final h2{
-                display: none;
-            }
-            .texto-consejos-final h4{
-                font-size: 18px;
-                text-align: start;
-            }
+
     
             .container h3{
                 font-size: 15px;
@@ -89,21 +159,26 @@
                 padding: 50px;
             }
     
-            /*pagina 4 NOSOTROS*/
+/*--------------------------------------------------------------*/
 
             .nosotros-titulo{
                 font-size: 40px;
             }
             .nosotros {
                 padding: 0;
-                font-size: 50px;
+                font-size: 25px;
                 text-align: start;
                 line-height: none;
+                h2{
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 40px;
+                }
+                h3{
+                    font-size: 30px;
+                    line-height: 50px;
+                }
             }
-            .nosotros h2{
-                font-family: "Montserrat", sans-serif;
-                font-size: 40px;
-            }
+
             .nosotros ul li{
                 font-family: "Montserrat", sans-serif;
                 text-decoration: underline;
