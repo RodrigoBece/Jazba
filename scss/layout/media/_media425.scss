@@ -126,6 +126,9 @@
             align-items: center;
             height: 200px;
         }
+        .container-consejos{
+            display: none;
+        }
         .encabezado{
             height: auto;
             display: flex;
@@ -136,22 +139,7 @@
             font-size: 20px;
         }
 
-        .texto-encima{
-            h3{
-                font-size: 10px;
-            }
-            p{
-                font-size: 8px;
-            }
-        }
-        .texto-encima2{
-            h3{
-                font-size: 10px;
-            }
-            p{
-                font-size: 10px;
-            }
-        }
+
 
 
         .texto-consejos-final{

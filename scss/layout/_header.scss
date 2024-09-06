@@ -50,6 +50,7 @@ nav {
 .navbar li:hover{
     transform: scale(1.2);
     filter: drop-shadow(4px 4px 8px rgba(168, 168, 168, 0.685));
+    transform: all 3000ms cubic-bezier(.43,-0.04,.05,1.01);
 
 }
 

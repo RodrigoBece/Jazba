@@ -34,11 +34,13 @@
         }
     }
 
-    .productos-categoria img:hover{
+
+
+    .productos a,button:hover{
         transform: scale(1.2);
-        filter: drop-shadow(2px 2px 6px rgba(30, 255, 0, 0.562));
+        filter: drop-shadow(2px 2px 6px rgba(39, 255, 10, 0.349));
+        transform: all 3000ms cubic-bezier(.32,.44,.79,.96);
     }
-    
 
 
     .boton-vermas,
@@ -49,7 +51,7 @@
     border-color: black;
     border-radius: 5px;
     cursor: pointer;
-    font-family: $secondary-font;
+    font-family: $primary-font;
     font-size: 20px;
     text-shadow: $button-shadow;
 }

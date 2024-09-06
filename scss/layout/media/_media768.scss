@@ -78,7 +78,9 @@
 
 
             /*-----------------------------------------*/
-
+            .container-consejos{
+                display: none;
+            }
 
         .encabezado{
             height: auto;
@@ -86,22 +88,7 @@
             flex-direction: column;
             text-align: center;
         }
-        .texto-encima{
-            h3{
-                font-size: 20px;
-            }
-            p{
-                font-size: 15px;
-            }
-        }
-        .texto-encima2{
-            h3{
-                font-size: 20px;
-            }
-            p{
-                font-size: 15px;
-            }
-        }
+
 
         .container{
             width: 100%;
