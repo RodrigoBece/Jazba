@@ -291,7 +291,7 @@ section button {
   justify-content: center;
 }
 .productos-tienda-final h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
   font-size: 30px;
   text-shadow: 2px 2px 5px #333;
   text-decoration: underline;
