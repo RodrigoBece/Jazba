@@ -82,7 +82,6 @@ nav ul li a {
   height: max-content;
   padding: 20px;
   text-align: center;
-  margin: 10px;
 }
 .productos h3 {
   font-family: "Montserrat", sans-serif;
@@ -616,6 +615,26 @@ section .ubicacion-c img {
 }
 
 /*media Q*/
+.grid-productos, .grid-productos2, .grid-productos3, .grid-productos4 {
+  gap: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-productos img, .grid-productos2 img, .grid-productos3 img, .grid-productos4 img {
+  width: 250px;
+  height: 250px;
+  margin: 40px;
+}
+.grid-productos p, .grid-productos2 p, .grid-productos3 p, .grid-productos4 p {
+  font-size: 20px;
+}
+
+.h3-productos {
+  padding: 40px;
+  font-size: 30px;
+}
+
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -627,11 +646,18 @@ section .ubicacion-c img {
     gap: 10px;
   }
   .promo {
+    display: none;
+    width: 100%;
     padding: 100px;
   }
   .productos {
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    height: max-content;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
   }
   .productos img {
     width: 200px;
@@ -651,6 +677,9 @@ section .ubicacion-c img {
     text-align: center;
     display: flex;
     flex-direction: column;
+  }
+  .consejos-1 p {
+    font-size: 10px;
   }
   /*----------------------------------------*/
   .grid-productos, .grid-productos2, .grid-productos3, .grid-productos4 {
@@ -672,19 +701,19 @@ section .ubicacion-c img {
     font-size: 30px;
   }
   .grid-productos {
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 350px 350px;
     grid-template-rows: 1fr 1fr;
   }
   .grid-productos2 {
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 350px 350px;
     grid-template-rows: 1fr 1fr;
   }
   .grid-productos3 {
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 350px 350px;
     grid-template-rows: 1fr 1fr;
   }
   .grid-productos4 {
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 350px 350px;
     grid-template-rows: 1fr 1fr;
   }
   /*-----------------------------------------*/
@@ -706,13 +735,13 @@ section .ubicacion-c img {
     font-size: 20px;
   }
   .contacts {
-    padding: 50px;
+    padding: 25px;
   }
   .location {
-    padding: 50px;
+    padding: 25px;
   }
   .social {
-    padding: 50px;
+    padding: 25px;
   }
   /*-----------------------------------------------------------*/
   .nosotros-titulo {
@@ -730,15 +759,41 @@ section .ubicacion-c img {
     flex-direction: column;
     width: 100%;
   }
-  .ubicacion-grid {
-    display: flex;
-    flex-direction: column;
+  .contactos-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 700px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "p1" "c2" "r1";
+  }
+  .pag-contactos {
+    grid-area: p1;
+  }
+  .correo {
+    grid-area: c2;
+  }
+  .redes-grid {
+    grid-area: r1;
   }
   section .ubicacion-c {
     padding-left: 180px;
   }
+  .ubicacion-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 700px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "p1" "c2" "r1";
+  }
   .pag-ubicacion h2 {
-    font-size: 50px;
+    font-size: 40px;
+    grid-area: p1;
+  }
+  .ubicacion-1 {
+    grid-area: c2;
+  }
+  .ubicacion-c {
+    grid-area: r1;
   }
 }
 @media (max-width: 425px) {
@@ -970,7 +1025,7 @@ section .ubicacion-c img {
     font-size: small;
   }
   .promo {
-    padding: 20px;
+    display: none;
   }
   .productos img {
     width: 100%;

@@ -1,4 +1,5 @@
 @media (max-width: 768px) {
+
     header {
         display: flex;
         align-items: center;
@@ -9,12 +10,20 @@
         gap: 10px;
     }
     .promo {
+        display: none;
+        width: 100%;
         padding: 100px;
     }
+
     .productos {
+        width: 100%;
         flex-direction: column;
         align-items: center;
-    }
+        height: max-content;
+        padding: 20px;
+        text-align: center;
+        margin: 0;
+}
     .productos img {
         width: 200px;
         height: 200px;
@@ -25,6 +34,7 @@
         justify-content: center;
     }
 
+
     .consejos img{
         display: flex;
         flex-direction: column;
@@ -34,6 +44,9 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+    }
+    .consejos-1 p{
+        font-size: 10px;
     }
 
     /*----------------------------------------*/
@@ -58,21 +71,21 @@
     
         
         .grid-productos{
-            grid-template-columns: 400px 400px ;
+            grid-template-columns: 350px  350px;
             grid-template-rows: 1fr 1fr ;
             }
             .grid-productos2{
-                grid-template-columns: 400px 400px ;
+                grid-template-columns: 350px 350px ;
                 grid-template-rows: 1fr 1fr ;
             }
             
             .grid-productos3{
-                grid-template-columns: 400px 400px ;
+                grid-template-columns: 350px 350px ;
                 grid-template-rows: 1fr 1fr ;
             }
             
             .grid-productos4{
-                grid-template-columns: 400px 400px ;
+                grid-template-columns: 350px 350px ;
                 grid-template-rows: 1fr 1fr ;
             } 
 
@@ -99,13 +112,13 @@
             font-size: 20px;
         }
         .contacts{
-            padding: 50px;
+            padding: 25px;
         }
         .location{
-            padding: 50px;
+            padding: 25px;
         }
         .social{
-            padding: 50px;
+            padding: 25px;
         }
 
 /*-----------------------------------------------------------*/
@@ -130,15 +143,63 @@
         flex-direction: column;
         width: 100%;
         }
-        .ubicacion-grid{
-            display: flex;
-            flex-direction: column;
-            }
+
+
+        .contactos-grid{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 700px ;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+            "p1"
+            "c2"
+            "r1"
+            ;
+        }
+        .pag-contactos{
+            grid-area: p1;
+        }
+        .correo{
+            grid-area: c2;
+
+        }
+        .redes-grid{
+            grid-area: r1;
+        }
+
+
+
+
+
+
             section .ubicacion-c {
                 padding-left: 180px ;
         
         }
-        .pag-ubicacion h2{
-            font-size: 50px;
+        .ubicacion-grid{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 700px;
+            grid-template-rows: 1fr ;
+        
+            grid-template-areas:
+            "p1"
+            "c2"
+            "r1"
+            ;
         }
+
+        .pag-ubicacion h2{
+            font-size: 40px;
+            grid-area: p1;
+
+        }
+        .ubicacion-1{
+            grid-area: c2;
+        }
+        .ubicacion-c{
+            grid-area: r1;
+        }
+
+
         }
